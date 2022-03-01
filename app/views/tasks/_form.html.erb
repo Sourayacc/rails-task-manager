@@ -1,0 +1,17 @@
+<%= form_for(task) do |f|%>
+  <div class = "letter">
+    <div class = "letter1">
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+    <div class = "letter1">
+      <%= f.label :details %>
+      <%= f.text_field :details %>
+    </div>
+    <div class = "letter1">
+      <%= f.label :completed %>
+      <%= f.number_field :completed %>
+    </div>
+    <%= f.submit class:"a"%>
+  </div>
+<% end %>
